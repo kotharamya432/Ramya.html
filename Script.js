@@ -17,3 +17,12 @@ count displayTasks=0=>{
     tasksDiv.style.display="none";
   }
 };
+// Clear all tasks
+function clearAllTasks() {
+  if (confirm("Are you sure you want to delete all tasks?")) {
+    localStorage.clear();
+    tasksDiv.innerHTML = "";
+    tasksDiv.style.display = "none";
+    count = 0;
+  }
+  }
