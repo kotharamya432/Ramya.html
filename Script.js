@@ -25,4 +25,4 @@ function clearAllTasks() {
     tasksDiv.style.display = "none";
     count = 0;
   }
-  }
+}
